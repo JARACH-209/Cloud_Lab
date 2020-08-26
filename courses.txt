@@ -1,0 +1,56 @@
+MA101 Linear Algebra
+MA102 Calculus
+CS101 Computer Programming
+CS103 Computer Programming Lab
+EC101 Digital Electronics
+EC103 Digital Electronics Lab
+CS104 Data Structures
+CS114 Data Structures Lab
+CS106 Computer Architecture
+EC104 Semiconductors
+HS101 Politics
+HS102 Economics
+CS201 Algorithms
+CS211 Algorithms Lab
+CS201 Data Communications
+CS204 IT Workshop
+EC201 Signal Processing
+EC211 Singal Processing Lab
+EC202 Analog 
+HS201 India Traditions
+HS202 Economics II
+CS202 Operating System
+CS212 Operating System Lab
+CS235 Artificial Intelligence
+CS205 Formal Languages
+EC204 Digital Signal
+EC206 Microwave
+CS301 Theory of Computation
+CS352 Computer Networks
+CS353 Computer Networks Lab
+CS351 Cloud Computing
+CS306 Machine Learning
+CS316 Machine Learning Lab
+SC301 Biology
+EC351 Digital Communication
+EC352 Digital Communication Lab
+EC301 Analog Integrated Circuits
+EC302 Analog Integrated Circuit Lab
+EC370 Electromagnetics
+EC380 Control Systems
+MA305 Optimization Techniques
+CS330 Software Engineering
+CS331 Software Engineering Lab
+CS320 Compilers
+CS321 Compilers Lab
+CS361 Computer Security
+SC302 Physics II
+EC353 Information Theory and Coding
+EC361 VLSI Design
+EC362 VLSI Design Lab
+EC371 Microwave Engineering
+EC372 Microwave Engineering Lab
+EC381 Embedded Systems
+EC382 Embedded Systems Lab
+CS401 Data Analytics
+EC456 Communication Network
