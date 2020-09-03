@@ -1,0 +1,24 @@
+body {
+  background-color: #121112;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  flex-wrap: wrap;
+  background-color: #bb86fc;
+  padding: 20px;
+  font-size: 40px;
+  margin-left: 30px;
+  outline: none;
+}
+
+p {
+  flex-wrap: wrap;
+  font-size: 70px;
+  text-align: center;
+}

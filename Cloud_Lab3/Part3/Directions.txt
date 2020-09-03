@@ -1,0 +1,17 @@
+Assignment:
+-Empty both the buckets
+-upload website to bucket
+-to create the instace run create_instance.py
+
+
+1. "startup.sh" script installs apache server httpd and runs script to copy the files into ec2 from S3 bucket.
+
+2. while launching ec2 instance we can provide a script to be executed when the instance is launched
+
+3. awscli or any other way doesn't work for downloading content in instance automatically.
+
+4. use wget but make sure bucket and files both are public !!!
+
+
+
+

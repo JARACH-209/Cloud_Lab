@@ -1,0 +1,12 @@
+Instance created : 2020-09-03 04:11:20.586833
+Instance name :  Cloud_Lab0 
+
+Instance created : 2020-09-03 04:42:27.019904
+Instance name :  Cloud_Lab0 
+
+Instance created : 2020-09-03 04:57:49.663280
+Instance name :  Cloud_Lab0 
+
+Instance created : 2020-09-03 09:54:10.644325
+Instance name :  Cloud_Lab0 
+
