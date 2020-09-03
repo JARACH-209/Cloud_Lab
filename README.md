@@ -1,5 +1,5 @@
 # **Cloud_Lab**
-## Cloud Comuting Assignments
+## Cloud Computing Assignments
 
 ### Lab 1 
   * Simple python programs to parse random texts and rank the words used
