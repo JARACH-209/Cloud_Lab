@@ -1,0 +1,29 @@
+1. create ec2 instance
+2. create autoscaling client and cloudwatch client for metric alarms
+2. set instance launch configuration
+3. create launch configuration using autoscaling client
+(launch config will tell what type of instance is needed when scaling up)
+
+(Wait for the instane to be in running state before attaching)
+4. attach created instance to autoscaling group
+5. create autoscaling group ( Give all possible avaialibility zones otherwise Instance and Autoscale zone mismatch will occur)
+6. set up scale up and down policies.
+(we will use simple scaling poliy instead of metric) 
+7. make cloudwatch alarm on those scaling policies. 
+(For this assignment I have chosen "NetworkIn" metric to measure the traffic)
+
+we made an instance, created an autoscaling group, set up launch configurations, and attached the instance to it. Then we have set up cloudwatch metric alarms for stepup and stepdown autoscaling policies. We have set our scaling policies upon these metric alarm trigger which will decide whether to scale-in or scale-out. 
+
+------------------------------------------
+Using loadbalancer
+1. create ec2 client, create elb client ( elastic load balancer)
+
+	elb_client = boto3.client("elbv2")
+
+2. we are using predefined security group with port 90 and HTTP requests allowed. It is recommended to make separate security group and set ingress and egress rules. using 
+	ec2_client.create_security_group(...)
+	Ingress : ec2_client.authorize_security_group_ingress(..)
+	Egress : ec2_client.authorize_security_group_egress(..)
+
+3. create instance of ec2 and elb
+	elb : elb_client.create_load_balancer()
