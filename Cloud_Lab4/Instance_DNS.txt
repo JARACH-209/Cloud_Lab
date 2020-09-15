@@ -1,4 +1,4 @@
-Instance created : Instance created : 2020-09-10 09:39:38.171899
+Instance created : 2020-09-10 09:39:38.171899
 Public DNS (IPv4): ec2-3-129-87-161.us-east-2.compute.amazonaws.com
 
 -----------------------------------------------------
