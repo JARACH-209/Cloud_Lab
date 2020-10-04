@@ -25,7 +25,7 @@ session_start();
 	#echo "Name " . $_SESSION["username"] . "<br>";
 $name = $_SESSION["username"];
 $input= filter_input(INPUT_POST, 'feed_back');
-$conn = mysqli_connect("lab5.coddw0p8k4sn.us-east-2.rds.amazonaws.com", "boto3_user", "boto3_password", "aws");
+$conn = mysqli_connect("your_rds_endpoint", "boto3_user", "boto3_password", "aws");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
