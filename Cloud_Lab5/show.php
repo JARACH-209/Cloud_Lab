@@ -47,7 +47,7 @@
 	  </thead>
 	  <tbody>
 	<?php
-	$conn = mysqli_connect("lab5.coddw0p8k4sn.us-east-2.rds.amazonaws.com", "boto3_user", "boto3_password", "aws");
+	$conn = mysqli_connect("your_rds_dns", "boto3_user", "boto3_password", "aws");
 	if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 	} 
