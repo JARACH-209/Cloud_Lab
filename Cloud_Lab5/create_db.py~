@@ -1,0 +1,33 @@
+import pymysql
+
+
+db = pymysql.connect('lab5.coddw0p8k4sn.us-east-2.rds.amazonaws.com','boto3_user','boto3_password')
+
+cursor = db.cursor()
+#query = '''create database aws'''
+
+print("Creating DB")
+
+#cursor.execute(query)
+#cursor.connection.commit()
+
+query = '''use aws'''
+
+cursor.execute(query)
+cursor.connection.commit()
+
+query = ''' CREATE TABLE feed(   name VARCHAR(50) ,    feed_b VARCHAR(255) );'''
+cursor.execute(query)
+cursor.connection.commit()
+
+query = ''' CREATE TABLE prime(    name VARCHAR(50) NOT NULL,    pass VARCHAR(255));'''
+cursor.execute(query)
+cursor.connection.commit() 
+
+query = '''Insert into prime values("achal","achal");'''
+cursor.execute(query)
+cursor.connection.commit()
+
+query = '''Insert into feed values("achal","how are you");'''
+cursor.execute(query)
+cursor.connection.commit()                                                                                                                         

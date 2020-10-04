@@ -1,0 +1,43 @@
+1. Make an EC2 instance with apache
+2. Make an rds instance of mysql type
+3. Create a db and upload the app in EC2 apache folder for it to work accordingly.
+4. Follow https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
+
+5. install everything in instance through starup.sh
+
+6. copy the files "dbinfo.inc" and "index.php" in S3 and use wget
+
+Run create_rds_instance -> run create_db -> run aws_s3_upload and upload the files to bucket -> run create_ec2_instance 
+
+create EC2 instance and check if website works
+
+
+
+
+
+
+wget -P /var/www/html https://achalbuck2.s3.us-east-2.amazonaws.com/welcome.php
+wget -P /var/www/html https://achalbuck2.s3.us-east-2.amazonaws.com/Login.php
+wget -P /var/www/html https://achalbuck2.s3.us-east-2.amazonaws.com/Logout.php
+wget -P /var/www/html https://achalbuck2.s3.us-east-2.amazonaws.com/session.php
+wget -P /var/www/html https://achalbuck2.s3.us-east-2.amazonaws.com/Config.php
+
+
+
+
+
+Try it with FLASK some other day !
+
+Requirements : Flask , Flask-Mysql,
+
+
+for startup.txt that goes in EC2 launch
+
+sudo apt-get update
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-wsgi
+sudo yum install python37
+sudo curl -O https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py --user
+sudo yum install python-virtualenv
+sudo pip install -r requirements.txt
