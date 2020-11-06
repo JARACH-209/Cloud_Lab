@@ -1,0 +1,8 @@
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar -input big.txt -output OutputA -mapper 'python3 mappera.py' -file ./mappera.py
+
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar -input big.txt -output OutputB -mapper 'python3 mappera.py' -reducer 'python3 reducera.py' -file ./mappera.py -file ./reducera.py
+
+
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar -input big.txt -output OutputC -mapper 'python3 mappera.py' -reducer 'python3 reducera.py' -combiner 'python3 combiner.py'  -file ./mappera.py -file ./reducera.py -file ./combiner.py
+
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.2.1.jar -input big.txt -output OutputD -mapper 'python3 mapperd.py' -reducer 'python3 reducerd.py' -file ./mapperd.py -file ./reducerd.py
