@@ -1,4 +1,11 @@
 # **Cloud_Lab**
+
+>Juniors or any other student alike: 
+*Try to implement the assignments yourself because some of the codes might be highly customized to the problems statements.
+I was also like you when implementing them, so, I did not care about making them reproducible, portable or generic.
+Also, a piece of advice, implementing them on your own will give you a huge satisfaction and deeper understanding.
+PEACE ! ;)*
+
 ## Cloud Computing Assignments
 
 ### Lab 1 
